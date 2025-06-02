@@ -272,7 +272,6 @@ function tabScrollEvt(){
   $(window).on('scroll', function(){
 		let sct  = $(window).scrollTop()    
     let $tab = $('[data-scroll-id]').parents('[class*=tab-type]');
-    console.log(sct, $tab.offset().top);
     if(sct > $tab.offset().top - 75){
       $tab.addClass('fixed');
     }else{
@@ -423,7 +422,7 @@ function fileAdd(wrap){
               <input type="file" class="real">
               <button type="button" class="btn-type4 st3">파일첨부</button>
             </div>
-            <button type="button" class="btn-type4 st3 btn-del">파일삭제</button>   
+            <!-- <button type="button" class="btn-type4 st3 btn-del">파일삭제</button>    -->
           </div>    
         </td>
       </tr>` : 
@@ -435,7 +434,7 @@ function fileAdd(wrap){
           <input type="file" class="real">
           <button type="button" class="btn-type4 st3">파일첨부</button>
         </div>
-        <button type="button" class="btn-type4 st3 btn-del">파일삭제</button>   
+        <!-- <button type="button" class="btn-type4 st3 btn-del">파일삭제</button>    -->
       </div>  `;
 
       let $fileset = $(html);
@@ -444,22 +443,21 @@ function fileAdd(wrap){
       $fileset.find('input[type=file]').on('change', function(){
         let v = $(this).val();
         $fileset.find('input[type=text]').val(v.split('fakepath\\')[1]);
-        if(v && checkInput() === 0) {
-          fileAdd(wrap);numbering();
-        }
+        // if(v && checkInput() === 0) {
+        //   fileAdd(wrap);
+        //   numbering();
+        // }
       });
       //del
       $fileset.find('.btn-del').on('click', function(){
         if($wrap.find('.btn-del').length <= 1) {
-          console.log('a');
           $fileset.find('input[type=text]').val('');
         }else if($fileset.next().length <= 0){
-          console.log('b');
           return;
         }else{
           $fileset.find('input[type=text]').val('');
-          $fileset.remove();
-          numbering();
+          // $fileset.remove();
+          // numbering();
         }
       });
   }
@@ -598,7 +596,8 @@ function popClose(id){
 function popOpen(id, callback){
 	$(id).fadeIn(300);
 	$('body').css('overflow','hidden');
-  $(id).find('input[type=text], input[type=number], textarea').val('');
+  $(id).find('input[type=text]:not([value]), input[type=number]:not([value]), textarea:not([value])').val('');
+  $(id).find('.input .btn-del').hide();
 	if(callback !=undefined ) callback();
 
 	$(id).find('.close').on('click', function(){
@@ -649,7 +648,6 @@ function alertOpen(text, type, callback){
   if(!type){
     $alert.find('.btn-wrap').append(btnCheck(''));
   }else{
-    console.log(type);
     $alert.find('.btn-wrap').append(btnCheck(type))
   }
   $alert.show();

@@ -1,6 +1,9 @@
 <div class="review-answer" style="display: none;">
   <strong class="tit">답변</strong>
-  <div class="info"><span>흥달쌤</span><span>2024.03.22</span></div>
+  <div class="info">
+    <!-- <span>흥달쌤</span> -->
+    <span>2024.03.22</span>
+  </div>
   <div class="answer pre-line">안녕하세요^^
     죄송합니다. 테스트 케이스 입력크기를 1000까지만 들어가야 하는데 100,000만까지 넣은 것 같습니다.
     일단 코드에서 배열의 크기를 1001 로 하지 말고 100001로 해서 채점받아 보세요.
@@ -17,7 +20,7 @@
     </div>
   </div>
 </div>
-<div class="top-menu" style="display: none;"><button type="button" class="btn-reple" onclick="popOpen('#pop-review-write');">답글 달기</button></div>
+<div class="top-menu" style="display: none;"><button type="button" class="btn-reple" onclick="popOpen('#pop-review-write');">댓글 달기</button></div>
 <div class="review-list-wrap">
   <ul class="review-list">
     <li>
@@ -95,11 +98,27 @@
 </div>
 <!-- // review-list -->
 <div class="btn-wrap line-t" style="display: none;">
-  <a href="javascript:void(0);" class="btn-type1 st2">목록</a>
+  <div class="left">
+    <a href="javascript:void(0);" class="btn-type4 st3 w-size2">댓글 더보기</a>
+  </div>
+  <div class="right">
+    <a href="javascript:void(0);" class="btn-type4 st2 w-size2">목록</a>
+  </div>
 </div>   
 <div class="btn-more-view" style="display: none;">
   <button type="button"><span>더보기</span></button>
 </div>          
+<div class="paging-wrap" style="display: none;">
+  <div class="paging">
+    <button type="button" disabled class="btn-first"></button>
+    <button type="button" disabled class="btn-prev"></button>
+    <button type="button">1</button>
+    <button type="button" class="on">2</button>
+    <button type="button">3</button>
+    <button type="button" class="btn-next"></button>
+    <button type="button" class="btn-last"></button>
+  </div>
+</div>
 <!-- // review-list-wrap -->
 
 
@@ -112,7 +131,7 @@
     <div class="popup">
       <button type="button" class="close" onclick="popClose('#pop-review-modify');"></button>
       <header class="pop-header">
-        <h1 class="pop-tit">답글 수정</h1>
+        <h1 class="pop-tit">댓글 수정</h1>
       </header>
       <div class="pop-body">
         <div class="textarea st-pop">
@@ -138,7 +157,7 @@
     <div class="popup">
       <button type="button" class="close" onclick="popClose('#pop-review-write');"></button>
       <header class="pop-header">
-        <h1 class="pop-tit">답글 등록</h1>
+        <h1 class="pop-tit">댓글 등록</h1>
       </header>
       <div class="pop-body">
         <div class="textarea st-pop">
