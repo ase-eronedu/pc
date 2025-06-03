@@ -283,7 +283,7 @@ function tabScrollEvt(){
 			return;
 		}
 
-		$('[data-scroll-id]').each(function(){
+		$('[data-scroll-id]').not(':hidden').each(function(){
         let h = $('.header').height() 
         let id = $(this).data('scroll-id');
 
