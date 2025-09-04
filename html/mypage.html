@@ -57,52 +57,101 @@
                   <td>123@naver.com</td>
                 </tr>
                 <tr>
-                  <th>휴대폰 번호</th>
+                  <th>비밀번호</th>
                   <td>
-                    <div class="input-phone">
-                      <div class="input">
-                        <div class="inp"><input type="text"></div>
-                      </div>
-                      <div class="input">
-                        <div class="inp"><input type="text"></div>
-                      </div>
-                      <div class="input">
-                        <div class="inp"><input type="text"></div>
-                      </div>
-                      <button type="button" class="btn-type4 st3">휴대폰 번호 변경</button>
+                    <div class="f-wrap">
+                      <span>**************</span>
+                      <button type="button" class="btn-type4 st3">비밀번호 변경</button>
                     </div>
                   </td>
                 </tr>
+               
                 <tr>
-                  <th>PIN 번호 변경</th>
+                  <th>휴대폰 번호</th>
                   <td>
-                    <p class="txt-noti"><em class="c-point">✲ PIN 번호 변경 시에만 입력해 주세요.</em></p>                    
                     <ul class="form">
                       <li>
-                        <div class="input" style="width:150px;">
-                          <div class="inp"><input type="number" placeholder="현재 PIN 번호"></div>
+                        <div class="input-phone">
+                          <div class="input">
+                            <div class="inp"><input type="text"></div>
+                          </div>
+                          <div class="input">
+                            <div class="inp"><input type="text"></div>
+                          </div>
+                          <div class="input">
+                            <div class="inp"><input type="text"></div>
+                          </div>
+                          <button type="button" class="btn-type4 st3" onclick="$('#authNum').show();" >휴대폰 번호 변경</button>
                         </div>
-                        <div class="txt-error">에러메시지입니다.</div>
                       </li>
-                      <li>
-                        <div class="input" style="width:150px;">
-                          <div class="inp"><input type="number" placeholder="새 PIN 번호"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="input" style="width:150px;">
-                          <div class="inp"><input type="number" placeholder="새 PIN 번호 확인"></div>
+                      <li id="authNum" style="display: none;">
+                        <div class="input input-authnum">
+                          <div class="inp"><input type="number" name="authnum" placeholder="인증번호"></div>
+                          <div class="time">05:00</div>
                         </div>
                       </li>
                     </ul>
                   </td>
                 </tr>
+
+                 <tr>
+                  <th>주소</th>
+                  <td>
+                    <ul class="form">
+                      <li>
+                        <div class="f-wrap">
+                          <div class="input input-addr">
+                            <div class="inp"><input type="text"></div>
+                          </div>
+                          <button type="button" class="btn-type4 st3">우편번호</button>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="input" style="width: 100%;">
+                          <div class="inp"><input type="text"></div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="input" style="width: 100%;">
+                          <div class="inp"><input type="text"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th>SNS 계정 연결</th>
+                  <td>
+                    <ul class="form">
+                      <li>
+                        <div class="input-sns-set">
+                          <div class="sns"><i class="ico-sns-kakao"></i><span class="txt">카카오</span></div>
+                          <label class="input-range">
+                            <input type="checkbox" class="btn_range" checked>
+                            <i></i>
+                          </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="input-sns-set">
+                          <div class="sns"><i class="ico-sns-naver"></i><span class="txt">네이버</span></div>
+                          <label class="input-range">
+                            <input type="checkbox" class="btn_range">
+                            <i></i>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                
                 <tr>
                   <th>정보수신</th>
                   <td>
                     <label class="inp-chk">
                       <input type="checkbox"><span class="ic"></span>
-                      <span class="t sm">SMS 정보수신 동의 &nbsp;&nbsp;<em class="c-point">✲ 이벤트 및 각종 할인정보 안내드립니다.</em></span>
+                      <span class="t sm">정보수신 동의 (이메일&SMS) &nbsp;&nbsp;<em class="c-point">✲ 이벤트 및 각종 할인정보 안내드립니다.</em></span>
                     </label>
                   </td>
                 </tr>
