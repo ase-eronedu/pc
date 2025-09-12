@@ -68,6 +68,7 @@
 .main-banner .swiper-slide{height:240px;}
 .main-banner .swiper-slide img{height:100%;}
 
+.withdrawal-wrap{min-height:600px;}
 .withdrawal-text + .merit-advantages-wrap{margin-top:40px;}
 .merit-advantages-wrap{margin-top:100px;}
 .merit-advantages-wrap.bg{padding:100px 120px; background: rgba(230, 225, 254, 0.2);}
@@ -392,7 +393,7 @@
 .payment-wrap .detail-box .row.row-noti{flex-direction: column;align-items: flex-start;margin-bottom:0;margin-top:20px;background: #F8F9FA;padding:20px;font-size:13px;border-radius:12px;}
 .payment-wrap .detail-box .bg {background: #F8F9FA;margin:15px 0;padding:20px;border-radius:12px;}
 .payment-wrap .detail-box .bg .date-guide {display:flex;align-items:center;}
-.payment-wrap .detail-box .bg .date-guide .label { font-weight: 500; font-size: 16px;margin-right:10px;}
+.payment-wrap .detail-box .bg .date-guide .label { font-weight: 500; font-size: 14px;margin-right:10px;}
 .payment-wrap .detail-box .bg .date-guide + .txt{margin-top:14px;}
 .payment-wrap .detail-box .bg .txt {margin-top:5px;font-size: 14px;}
 .payment-wrap .detail-box .bg .txt span em { color:var(--c-primary);padding-right:11px;position:relative;margin-right:11px;}
@@ -402,7 +403,7 @@
 .payment-wrap .detail-box .col .full {width:100%;}
 
 .line-plus{position:relative;margin:22px 0; }
-.line-plus:before{content:'';display:block;width:100%;height:1px;border: 1px solid rgba(134, 144, 156, 0.3);}
+.line-plus:before{content:'';display:block;width:100%;height:1px;border-top: 1px solid rgba(134, 144, 156, 0.3);}
 .line-plus i{background:#fff;padding:0 2px;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
 .line-plus i:before{content:'';display:block; width:20px;height:20px; background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0ZM9.9502 3.9502C9.39791 3.9502 8.9502 4.39791 8.9502 4.9502V8.9502H4.94922C4.39715 8.95045 3.94922 9.39807 3.94922 9.9502C3.94945 10.5021 4.39729 10.9499 4.94922 10.9502H8.9502V14.9502C8.95037 15.5023 9.39802 15.9502 9.9502 15.9502C10.5022 15.95 10.95 15.5022 10.9502 14.9502V10.9502H14.9492C15.5014 10.9502 15.949 10.5023 15.9492 9.9502C15.9492 9.39791 15.5015 8.9502 14.9492 8.9502H10.9502V4.9502C10.9502 4.39804 10.5023 3.9504 9.9502 3.9502Z' fill='%2386909C' fill-opacity='0.5'/%3E%3C/svg%3E") no-repeat 50% 50%;background-size: 20px 20px;}
 
@@ -794,6 +795,7 @@
 .coupon-wrap .coupon-list ul li .box .desc .info span ~ span:before{content:'';display:block;width:1px;height:10px;background:#86909C;position:absolute;top:50%;left:0;transform:translateY(-50%);}
 .dot-list-box {margin-top:10px;background: #F8F9FA;padding: 20px; border-radius: 12px;}
 
+.my-history-detail-wrap .tit{font-size:14px;}
 .my-history-detail-wrap .tit + *{margin-top:6px;}
 .my-history-detail-wrap .history-detail-box {padding: 20px; background: #FFFFFF; border: 1px solid #F0F0F0; border-radius: 12px;}
 .my-history-detail-wrap .history-detail-box ul {font-size:14px;display:flex;flex-direction: column;gap:14px;}

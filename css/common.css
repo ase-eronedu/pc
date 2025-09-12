@@ -536,3 +536,5 @@ body{min-width: 1440px;}
 .content .page-header .step li:first-child:before{display:none !important;}
 .content .page-header .step li.checked span{background:#356CFF}
 .content .page-header .step li.on span{width:20px;height:20px;background:#356CFF url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 3.54545L5.02174 7.22727L10.5 1.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat 50% 50%;background-size:auto 7px;}
+
+.lecure-notice-wrap .form-wrap .label{font-size:13px;}
