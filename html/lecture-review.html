@@ -58,7 +58,7 @@
   <div class="container">
     <main class="content">
       <div class="lecure-review-wrap">
-        <h1 class="title-subject"><i class="ico-reple"></i><span>수강평</span></h1>
+        <!-- <h1 class="title-subject"><i class="ico-reple"></i><span>수강평</span></h1> -->
         
         <div class="lecture-review-wrap">
           <div class="review-input-box">
@@ -74,6 +74,7 @@
             $.get("common/review.html", function(data) {
                $(data).appendTo(".lecture-review-wrap");
                //  $('.btn-more-view').show();
+              $('#reviewRegist').hide();               
               $('.paging-wrap').show();
            });
          </script>        
@@ -82,11 +83,9 @@
     </main>
     <!-- // content -->
 
-    <script>
-      $.get("common/additional-info.html", function(data) {
-         $(data).appendTo(".container");
-     });
-   </script>
+    <div class="banner-img" style="width:340px;margin-left:40px;">
+      <img src="https://imagescdn.gettyimagesbank.com/500/202012/jv12202987.jpg" alt="">
+    </div>
   </div>
   <!-- // container -->
 

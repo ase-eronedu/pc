@@ -114,6 +114,7 @@ function mainVisual(){
         disableOnInteraction: false,
       },
       speed:800,
+      effect: 'fade',
       slidesPerView: 1,
       navigation: {
         nextEl: ".main-slider .swiper-button-next",
