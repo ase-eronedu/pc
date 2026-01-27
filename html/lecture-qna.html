@@ -56,15 +56,42 @@
   </div>  
   <!-- container -->
   <div class="container">
-    <main class="content">
+    <div class="menu-box">
+      <div class="input-wrap">
+        <label class="inp-chk">
+            <input type="checkbox"><span class="ic"></span>
+            <span class="t">내 글만 보기</span>
+        </label>
+      </div>
+      <div class="forms">
+        <select required>
+          <option disabled selected hidden value="">섹션선택</option>
+          <option>섹션선택2</option>
+          <option>섹션선택3</option>
+        </select>
+        <select required>
+          <option disabled selected hidden value="">강의선택</option>
+          <option>강의선택2</option>
+          <option>강의선택3</option>
+        </select>
+        <div class="input input-search">
+          <div class="inp"><input type="text" placeholder="내용"></div>
+          <button type class="btn-search"></button>
+        </div>
+      </div> 
+    </div> 
+    
+       
+    <main class="content">   
       
       <div class="lecure-notice-wrap">
-        <h1 class="title-subject"><i class="ico-question"></i><span>질문답변</span></h1>
+        <!-- <h1 class="title-subject"><i class="ico-question"></i><span>질문답변</span></h1> -->
+                
         <ul class="data-list">
           <li>
             <a href="javascript:void(0);">
               <div class="tags"><span class="tag-st3">답변완료</span></div>
-              <b class="tit"><i class="ico-lock"></i>43번 강의내용에 문의사항 있습니다</b>
+              <b class="tit"><i class="ico-lock"></i>43번 강의내용에 <em class="highlight">문의사항</em> 있습니다</b>
               <p class="txt">내용 1줄 it취업을 위한 알고리즘 문제풀이" 후속 강의가 오픈되어서 알려드립니다.후속 강의가 오픈되어서 알려드립니다.후속 강의가</p>
               <div class="info">
                 <div class="root"><span>섹션1 실기강의</span><span>코드분석 강의입니다.</span></div>
@@ -106,7 +133,7 @@
           </div>
         </div>
         <div class="btn-wrap">
-          <a href="javascript:void(0);" class="btn-type1 st2">대시보드 메인으로</a>
+          <a href="javascript:void(0);" class="btn-type1 st2">상담등록</a>
         </div>
       </div>
     </main>
