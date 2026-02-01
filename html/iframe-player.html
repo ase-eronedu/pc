@@ -1,0 +1,208 @@
+<html lang="ko"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- remain only host at referer info -->
+    <meta name="referrer" content="origin-when-cross-origin">
+
+    <title>skill_video1</title>
+
+    <!-- Scripts -->
+    <script>
+        window.Laravel = {"lang":"ko"};
+    </script>
+
+    <!-- Player 이벤트 리스닝 코드 -->
+    <script language="javascript" for="Player" event="onProgress(percent, position, duration)">
+        Kollus_onProgress(percent, position, duration);
+    </script>
+    <script language="javascript" for="Player" event="onScreen(state)">
+        Kollus_onScreen(state);
+    </script>
+    <script language="javascript" for="Player" event="onSpeed(speed)">
+        Kollus_onSpeed(speed);
+    </script>
+    <script language="javascript" for="Player" event="onVolume(volume)">
+        Kollus_onVolume(volume);
+    </script>
+    <script language="javascript" for="Player" event="onStatus(state)">
+        Kollus_onStatus(state);
+    </script>
+    <script language="javascript" for="Player" event="onErrorMsg(error_code)">
+        Kollus_onErrorMsg(error_code);
+    </script>
+
+    <!-- Styles -->
+    <link href="/css/app.css?id=e85655a50dc2e84dcf64" rel="stylesheet">
+<style type="text/css">
+#kollus_player_cont[data-v-e3fd5e58] {
+    width: 100%;
+    height: 100%;
+}
+.notify-window[data-v-e3fd5e58] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style><style type="text/css">
+#kollus_player_cont[data-v-c811a4e2] {
+    width: 100%;
+    height: 100%;
+}
+.notify-window[data-v-c811a4e2] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style><style type="text/css">
+.flash-plugin-button[data-v-b4e2aef2] {
+    color: #ccc;
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer;
+}
+</style><style type="text/css">
+.background-poster[data-v-5d3d907c] {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-color: #000000;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+.background-play-button[data-v-5d3d907c] {
+    font-size: 12px;
+    color: #fff;
+    background: 0;
+    border: 5px solid #fff;
+    border-radius: 100em;
+    height: 100px;
+    line-height: 100px -5px;
+    margin: 0;
+    width: 100px;
+    pointer-events: auto;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.3), 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+.background-play-button[data-v-5d3d907c]:before {
+     font-size: 3em;
+     margin-left: 10px;
+     text-shadow: 0 0 10px rgba(0, 0, 0, .6);
+     content: '\E800';
+     font-family: "icon-v4";
+}
+.notify-window[data-v-5d3d907c] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+video[data-v-5d3d907c]::-internal-media-controls-download-button {
+    display: none;
+}
+video[data-v-5d3d907c]::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+video[data-v-5d3d907c]::-webkit-media-controls-panel {
+    width: calc(100% + 40px); /* Adjust as needed */
+}
+</style><style type="text/css">
+.background-poster[data-v-ec0db3a4] {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-color: #000000;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+.background-play-button[data-v-ec0db3a4] {
+    font-size: 12px;
+    color: #fff;
+    background: 0;
+    border: 5px solid #fff;
+    border-radius: 100em;
+    height: 100px;
+    line-height: 100px -5px;
+    margin: 0;
+    width: 100px;
+    pointer-events: auto;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.3), 0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+.background-play-button[data-v-ec0db3a4]:before {
+    font-size: 3em;
+    margin-left: 10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    content: '\E800';
+    font-family: "icon-v4";
+}
+.background-download-button[data-v-ec0db3a4] {
+    background: url('/img/assets_spritesheet.png?_ver=3905') no-repeat;
+    outline: 0;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    box-shadow: none;
+    transition: none;
+    cursor: pointer;
+}
+.notify-window[data-v-ec0db3a4] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+video[data-v-ec0db3a4]::-internal-media-controls-download-button {
+    display: none;
+}
+video[data-v-ec0db3a4]::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+video[data-v-ec0db3a4]::-webkit-media-controls-panel {
+    width: calc(100% + 40px); /* Adjust as needed */
+}
+</style><link rel="stylesheet" href="https://file.kollus.com/public/kollus_player_v3/kollusPlayer.3.0.107.min.css?_bust=3.0.107+4003"><script src="https://file.kollus.com/public/kollus_player_v3/common/js/lib/jquery-1.12.4.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/lib/jquery.xdomainrequest.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/lib/TweenMax.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/lib/json2.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/lib/moment.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/lib/platform.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/lib/ua-parser.1.0.0.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/lib/socket.io.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/configuration.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/language-pack.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/agentcheck.1.1.1.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/can-autoplay.min.js?_bust=1.0.0"></script><script src="https://file.kollus.com/vgcontroller/vg-controller-server.2.0.0.min.js?_bust=2.0.0+3319"></script><script src="https://file.kollus.com/public/kollus_player_v3/kollusPlayer.3.0.107.min.js?_bust=3.0.107+4003"></script><script src="https://file.kollus.com/public/kollus_player_v3/common/js/lib/vtt.min.js?_bust=1.0.0"></script></head>
+<body>
+<div id="app"><div id="kollus-player-launcher"><div data-v-0689b64a="" id="container">
+        <video autoplay muted loop playsinline style="width:100%;height:100%;">
+          <source src="https://seoeunan.cafe24.com/eraonedu/pc/test.mp4" type="video/mp4">
+        </video>
+
+</div></div></div>
+
+<!-- Scripts -->
+<script src="/js/manifest.js?id=89712bc6d8c588400cae"></script>
+<script src="/js/vendor.js?id=8ca9daa6df95ea083aac"></script>
+<script src="/js/app.js?id=78f07c31eed3c99d8a40"></script>
+
+
+
+<div class="agent-check-alert" style="top: 359px; left: 567px;"><div class="agent-check-icon check"></div></div><div id="popup" class="popup-refresh-confirm popup-default" style="top: 334px; left: 567px;"><div class="content"><span>Kollus Player V3가 설치되어 있지 않습니다.<br>다운로드 버튼을 클릭하여 설치하시기 바랍니다.</span></div><div class="footer"><span class="button-download button download">다운로드</span></div></div><div id="popup" class="popup-refresh-confirm popup-default"><div class="content"><span>플레이어 초기화에 실패하였습니다.<br>화면을 새로고침 해주세요.</span></div><div class="footer"><span class="button-download button download">새로고침</span></div></div></body></html>
+        
