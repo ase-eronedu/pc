@@ -564,5 +564,5 @@ body{min-width: 1440px;}
 
 .lecure-notice-wrap .form-wrap .label{font-size:13px;}
 
-.content ~ .banner-img{margin-left:40px;}
+.content ~ .banner-img{margin-left:40px;width:240px;}
 .banner-img img{width:100%;}
