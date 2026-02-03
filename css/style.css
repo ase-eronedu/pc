@@ -453,7 +453,7 @@
 .data-list li a .tags{margin-bottom:15px;}
 .data-list li a .tit {display:flex;align-items: center;   color: #373F57; font-weight: 600; font-size: 15px; overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.2em;height:1.2em;}
 .data-list li a .tit .ico-lock{vertical-align: middle;position:relative;top:-2px;margin-right:4px;}
-.data-list li a .tit span{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.2em;height:1.2em;}
+.data-list li a .tit span:not(.highlight){overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.2em;height:1.2em;}
 .data-list li a .txt{font-size: 14px;margin-top:10px;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.2em;height:1.3em; font-weight: 300;}
 .data-list li a .info {margin-top:10px;display:flex;align-items:center;}
 .data-list li a .info .right{margin-left:auto;display:flex;align-items:center;}
@@ -689,7 +689,7 @@
 .frame-player .player-wrap .player-header .lecture-title .label span {font-weight:500;font-size:16px;}
 .frame-player .player-wrap .player-header .lecture-title .name {height:100%;padding-left:34px;height:52px;display:flex;align-items:center;}
 /* .frame-player .player-wrap .player-header .right  [class*=btn-type] .ico-star{margin-right:4px; width:14px;height:14px; background-image: url("data:image/svg+xml,%3Csvg width='15' height='14' viewBox='0 0 15 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.88258 1.21484C7.75376 0.947483 7.48153 0.777344 7.18258 0.777344C6.88362 0.777344 6.61383 0.947483 6.48258 1.21484L4.91973 4.43047L1.42945 4.94575C1.13778 4.9895 0.894729 5.19366 0.804798 5.47318C0.714867 5.75269 0.787784 6.06137 0.996812 6.26797L3.52945 8.77387L2.93153 12.3152C2.88292 12.6069 3.00445 12.9034 3.24508 13.076C3.4857 13.2485 3.8041 13.2704 4.0666 13.1319L7.18501 11.4669L10.3034 13.1319C10.5659 13.2704 10.8843 13.251 11.1249 13.076C11.3656 12.901 11.4871 12.6069 11.4385 12.3152L10.8381 8.77387L13.3708 6.26797C13.5798 6.06137 13.6551 5.75269 13.5628 5.47318C13.4704 5.19366 13.2298 4.9895 12.9381 4.94575L9.44542 4.43047L7.88258 1.21484Z' fill='white'/%3E%3C/svg%3E%0A");} */
-.frame-player .player-wrap .player{height:calc(100vh - 52px);}
+.frame-player .player-wrap .player{height:calc(100% - 52px);}
 .frame-player .player-menu-wrap{overflow:hidden;display:flex;align-items:center;align-items:stretch;/*width:548px;*/}
 .frame-player .player-menu-wrap .menu-detail-wrap{flex:1;overflow:hidden;}
 .frame-player .player-menu-wrap .player-menu{padding:12px 0; width:68px;background: #F8F9FA;}
