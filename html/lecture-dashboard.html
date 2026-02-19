@@ -50,8 +50,8 @@
   <div class="tab-type1 sticky">
     <ul class="wrapper">
       <li class="on"><a href="javascript:void(0);">대시보드</a></li>
-      <li><a href="javascript:void(0);">공지사항</a></li>
-      <li><a href="javascript:void(0);">질문답변</a></li>
+      <li><a href="javascript:void(0);">공지사항<span class="new"></span></a></li>
+      <li><a href="javascript:void(0);">내 질문 현황</a></li>
       <li><a href="javascript:void(0);">수강평</a></li>
     </ul>
   </div>  
@@ -68,15 +68,15 @@
                 <div class="wrap-header">
                   <h1 class="title-subject"><i class="ico-curriculum"></i><span>커리큘럼</span></h1>
                   <div class="toggle-menu">
-                    <button class="btn-tog on"><span>모두접기</span></button>
+                    <button class="btn-tog"><span>모두열기</span></button>
                     <span class="total">115강의</span>
                     <span class="time">25시간 10분</span>
                   </div>
                 </div>
                 <ul class="toggle-list">
-                  <li class="on">
+                  <li>
                     <button type="button" class="btn"><b class="tit">섹션 0. 문제(소스) 파일 및 자동채점폴더</b></button>
-                    <ul>
+                    <ul style="display: none;">
                       <li>
                         <div class="left">
                           <div class="lecture-name checked">
@@ -89,9 +89,9 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="on">
+                  <li>
                     <button type="button" class="btn"><b class="tit">섹션 1. 문제(소스) 파일 및 자동채점폴더</b><div class="right"><span class="time">31강 ∙ 5시간 10분</span></div></button>
-                    <ul>
+                    <ul style="display: none;">
                       <li>
                         <div class="left">
                           <div class="lecture-name checked">
@@ -145,14 +145,15 @@
                         </div>
                         <div class="right">
                           <span class="download"><a href="javascript:void(0);" class="btn-download"><i class="ico-down"></i></a></span>
+                          <span class="reple">3</span>
                           <span class="time">04 : 53</span>
                         </div>
                       </li>
                     </ul>
                   </li>
-                  <li class="on">
+                  <li>
                     <button type="button" class="btn"><b class="tit">섹션 1. 문제(소스) 파일 및 자동채점폴더</b><div class="right"><span class="time">31강 ∙ 5시간 10분</span></div></button>
-                    <ul>
+                    <ul style="display: none;">
                       <li>
                         <div class="left">
                           <div class="lecture-name">
@@ -164,6 +165,7 @@
                         </div>
                         <div class="right">
                           <span class="download"><a href="javascript:void(0);" class="btn-download"><i class="ico-down"></i></a></span>
+                          <span class="reple">3</span>
                           <span class="time">04 : 53</span>
                         </div>
                       </li>
@@ -183,9 +185,9 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="on">
+                  <li>
                     <button type="button" class="btn"><b class="tit">섹션 1. 문제(소스) 파일 및 자동채점폴더</b><div class="right"><span class="time">31강 ∙ 5시간 10분</span></div></button>
-                    <ul>
+                    <ul style="display: none;">
                       <li>
                         <div class="left">
                           <div class="lecture-name">
@@ -221,9 +223,12 @@
             </section>
           </div>
           <div class="right-area">
-            <!-- 내 학습상황 -->
+            <div class="urgent-notice">
+              <p><span>[긴급]회원님들께 알립니다. 해당 내용을 필독해주세요.</span></p>
+            </div>
+            <!-- 내 학습현황 -->
             <section class="my-study-wrap">
-              <h1 class="title-subject"><i class="ico-trophy"></i><span>내 학습상황</span></h1>
+              <h1 class="title-subject"><i class="ico-trophy"></i><span>내 학습현황</span></h1>
               <ul>
                 <li>
                   <b><em>12</em>/110</b>
@@ -264,9 +269,9 @@
               </ul>
             </section>
 
-            <!-- 최근질문 -->
+            <!-- 내 질문 현황 -->
             <section class="recent-question-wrap">
-              <h1 class="title-subject line-b"><i class="ico-question"></i><span>최근질문</span></h1>
+              <h1 class="title-subject line-b"><i class="ico-question"></i><span>내 질문 현황</span></h1>
               <div class="btn-more">
                 <button type="button"><span>더보기</span></button>
               </div>
