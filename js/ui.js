@@ -290,7 +290,8 @@ function tabScrollEvt(){
 			click = false
 		}, 500);
 
-		let h = $('.header').height() 
+		let h = $('.header').height()
+		let $tab = $(this).parents('[class*=tab-type]');
 		let id = $(this).data('scroll-id');
 
 		if($(this).parents('li').length > 0){
@@ -303,7 +304,8 @@ function tabScrollEvt(){
 
 		setTimeout(function(h){
 			if($('#'+id).length <= 0 ) return;
-      $('html, body').animate({scrollTop:$('#'+id).offset().top - h}, 300);
+			let offset = $tab.hasClass('fit') ? 10 : 0;
+      $('html, body').animate({scrollTop:$('#'+id).offset().top - h + offset}, 300);
 		},100, h);
   });
 
@@ -523,12 +525,12 @@ function toggleList(){
   $tog.on('click', function(){
     if($tog.hasClass('on')){
       $tog.removeClass('on');
-      $tog.find('span').text('모두열기');
+      $tog.find('span').text('모두 열기');
       $pannels.slideUp();
       $lists.removeClass('on');      
     }else{
       $tog.addClass('on');
-      $tog.find('span').text('모두접기');
+      $tog.find('span').text('모두 접기');
       $pannels.slideDown();
       $lists.addClass('on');
     }
@@ -546,10 +548,10 @@ function toggleList(){
     let $listsOn = $('[data-evt="toggle-list"] .toggle-list > li.on');
     if($listsOn.length == $lists.length){
       $tog.addClass('on');
-      $tog.find('span').text('모두접기');      
+      $tog.find('span').text('모두 접기');      
     }else if(0 == $listsOn.length){
       $tog.removeClass('on');
-      $tog.find('span').text('모두열기');
+      $tog.find('span').text('모두 열기');
     }
   });
 }

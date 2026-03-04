@@ -232,6 +232,7 @@ input:-webkit-autofill:active { -webkit-box-shadow: 0 0 0px 1000px white inset !
 
 .tab-type1 + *{margin-top:40px;}
 .wrap > .tab-type1.sticky{padding-bottom:0;}
+.tab-type1.line-b ul{border-bottom:1px solid #F0F0F0;}
 .tab-type1.sticky{padding-bottom:20px;}
 .tab-type1.sticky + *{margin-top:0;}
 .tab-type1.sticky + .lecure-dashboard-wrap{margin-top:40px;}
