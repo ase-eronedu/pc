@@ -90,8 +90,13 @@
               <p class="txt">클래스의 수강시작일을 설정하지 않은 경우 결제일로부터 7일 후 자동 시작됩니다</p>
             </div>
             <div class="line-plus"><i></i></div>
-            <ul class="product-list st3">
+            <ul class="product-list st3 st3-2">
               <li>
+                <div class="check">
+                  <label class="inp-chk">
+                    <input type="checkbox" checked><span class="ic"></span>
+                  </label>
+                </div>
                 <a href="javascript:void(0);" class="item"> 
                   <div class="img"><img src="../images/temp/temp-textbooks.jpg" alt=""></div>
                   <dl class="desc">
@@ -113,6 +118,11 @@
                 </a>
               </li>              
               <li>
+                <div class="check">
+                  <label class="inp-chk">
+                    <input type="checkbox" checked><span class="ic"></span>
+                  </label>
+                </div>
                 <a href="javascript:void(0);" class="item"> 
                   <div class="img"><img src="../images/temp/temp-textbooks.jpg" alt=""></div>
                   <dl class="desc">
@@ -160,48 +170,50 @@
             </div>
           </div>
           <!-- 배송정보 -->
-          <h2 class="title-major">배송정보</h2>
-          <div class="detail-box">
-            <div class="col">
-              <div class="label">받으시는분</div>
-              <div class="input full">
-                <div class="inp"><input type="text" placeholder="멤버 이름을 입력해주세요."></div>
+          <div id="delivery-info" style="margin-top: 60px;">
+            <h2 class="title-major">배송정보</h2>
+            <div class="detail-box">
+              <div class="col">
+                <div class="label">받으시는분</div>
+                <div class="input full">
+                  <div class="inp"><input type="text" placeholder="멤버 이름을 입력해주세요."></div>
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="label">연락처</div>
-              <div class="input full">
-                <div class="inp"><input type="text"></div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="label">우편번호검색</div>
-              <div class="input-address">
-                <div class="input">
+              <div class="col">
+                <div class="label">연락처</div>
+                <div class="input full">
                   <div class="inp"><input type="text"></div>
                 </div>
-                <button type="button" class="btn-type4 st3">우편번호 등록</button>
               </div>
-            </div>
-            <div class="col">
-              <div class="label">기본주소</div>
-              <div class="input full">
-                <div class="inp"><input type="text" placeholder="기본주소"></div>
+              <div class="col">
+                <div class="label">우편번호검색</div>
+                <div class="input-address">
+                  <div class="input">
+                    <div class="inp"><input type="text"></div>
+                  </div>
+                  <button type="button" class="btn-type4 st3">우편번호 등록</button>
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="label">상세주소</div>
-              <div class="input full">
-                <div class="inp"><input type="text" placeholder="상세주소"></div>
+              <div class="col">
+                <div class="label">기본주소</div>
+                <div class="input full">
+                  <div class="inp"><input type="text" placeholder="기본주소"></div>
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="label">배송시 요청사항</div>
-              <select>
-                <option>문앞에 놓아주세요.</option>
-                <option>텍스트2</option>
-                <option>텍스트3</option>
-              </select>
+              <div class="col">
+                <div class="label">상세주소</div>
+                <div class="input full">
+                  <div class="inp"><input type="text" placeholder="상세주소"></div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="label">배송시 요청사항</div>
+                <select>
+                  <option>문앞에 놓아주세요.</option>
+                  <option>텍스트2</option>
+                  <option>텍스트3</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
@@ -296,6 +308,18 @@
 
     // popOpen('#pop-coupon');
     
+    function toggleDeliveryInfo() {
+      var $checkboxes = $('.product-list.st3-2 input[type="checkbox"]');
+      var anyChecked = $checkboxes.is(':checked');
+      $('#delivery-info').toggle(anyChecked);
+    }
+
+    toggleDeliveryInfo();
+
+    $(document).on('change', '.product-list.st3-2 input[type="checkbox"]', function () {
+      toggleDeliveryInfo();
+    });
+
     $(document).on('change', 'input[name="coupon"]', function () {
       var $label = $(this).closest('label');
       var text = $label.find('.t').text().trim();

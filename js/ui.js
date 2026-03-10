@@ -924,6 +924,31 @@ function repleEvt() {
 }
 
 
+function tooltipFloating(){
+  if($('#tooltip-floating').length <= 0){
+    $('body').append('<div id="tooltip-floating"></div>');
+  }
+  $('body').on('mouseenter', '.btn-tooltip[data-tooltip]', function(){
+    var text = $(this).data('tooltip');
+    var $ico = $(this).find('.ico-tooltip');
+    var anchorEl = $ico.length ? $ico[0] : this;
+    var rect = anchorEl.getBoundingClientRect();
+    $('#tooltip-floating').html(text).show();
+    var tw = $('#tooltip-floating').outerWidth();
+    var th = $('#tooltip-floating').outerHeight();
+    var btnCenterX = rect.left + rect.width / 2;
+    var left = btnCenterX - 20;
+    if(left + tw > window.innerWidth - 8){ left = window.innerWidth - tw - 8; }
+    if(left < 8){ left = 8; }
+    var arrowLeft = btnCenterX - left - 10;
+    var top = rect.top - th - 18;
+    if(top < 0){ top = rect.bottom + 18; }
+    $('#tooltip-floating').css({ left: left + 'px', top: top + 'px', '--arrow-left': arrowLeft + 'px' });
+  }).on('mouseleave', '.btn-tooltip[data-tooltip]', function(){
+    $('#tooltip-floating').hide();
+  });
+}
+
 $(function(){
   gnbMenu();
   totalMenu();
@@ -945,4 +970,5 @@ $(function(){
   upani();
   toggleBtn();
   inputPw();
+  tooltipFloating();
 });
