@@ -476,7 +476,8 @@ body{min-width: 1440px;}
 .header .top-area .right .login-menu li ~ li:after{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:10px;background:#DDDDDD;transform:translateY(-50%);}
 .header .top-area .right .login-menu li a {display:block;}
 .header .logo-area {border-bottom:1px solid #E5E7EB;}
-.header .logo-area .wrapper {position:relative;text-align:center;height:80px;display:flex;justify-content:center;padding-top:8px;}
+.header .logo-area .wrapper {position:relative;text-align:center;height:46px;display:flex;justify-content:center;}
+.header .logo-area .wrapper .logo{transform:translateY(-10px);}
 .header .logo-area .wrapper .logo a {display:block;}
 .header .logo-area .wrapper .right {position:absolute;top:50%;right:0;transform:translateY(-50%);}
 .header .logo-area .wrapper .right .user-menu {display:flex;align-items:center;}
