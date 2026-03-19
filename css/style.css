@@ -923,7 +923,7 @@
 .my-history-detail-wrap .info-guide p:before{content:'';display:block;width:46px;height:48px;background:url('../images/content/ico-info-guide.svg') no-repeat 0 0;}
 .my-history-detail-wrap + .form-wrap{margin-top:20px;}
 .my-history-detail-wrap .history-detail-box .menu .btn-type5{font-size:13px;padding:0 14px;height:35px;}
-.my-history-detail-wrap * + .grid-cell-box{margin-top:30px;}
+.my-history-detail-wrap * + .flex-cell-box{margin-top:30px;}
 
 /* form-wrap box-st */
 * + .form-wrap.box-st{margin-top:20px;}
