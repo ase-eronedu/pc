@@ -285,6 +285,9 @@ input:-webkit-autofill:active { -webkit-box-shadow: 0 0 0px 1000px white inset !
 .data-type1.st3 table th{height:40px; background:#EDEEF080;border-color: #EAEAEA;font-size:13px;font-weight:600;white-space: initial !important;}
 .data-type1.st3 table td{height:60px; background:#fff;border-color: #EAEAEA;font-size:13px;white-space: initial !important;}
 
+.grid-cell-box{display:grid;grid-template-columns: repeat(2, 1fr);grid-gap:20px;}
+.grid-cell-box + * {margin-top:30px;}
+
 .editor-wrap{margin-top:20px;}
 
 .gage-wrap .txt{display:block; margin-bottom:10px;font-size: 14px;color: #86909C;}
