@@ -128,7 +128,7 @@
 .main-review-wrap .main-review-list:after{content:'';position:absolute;top:0;height:100%; display:block;width:80px;background: linear-gradient(90deg, #F5F3FF 40%, rgba(2445, 243, 255, 0) 100%);z-index: 20;}
 .main-review-wrap .main-review-list:before{left:0;}
 .main-review-wrap .main-review-list:after{right:0;transform: matrix(-1, 0, 0, 1, 0, 0);}
-.main-review-wrap .main-review-list .swiper-slide{width:270px;opacity: 0.5;}
+.main-review-wrap .main-review-list .swiper-slide{width:270px;opacity: 0.5;padding:0 15px;box-sizing: content-box;}
 .main-review-wrap .main-review-list .swiper-slide.swiper-slide-prev,
 .main-review-wrap .main-review-list .swiper-slide.swiper-slide-next,
 .main-review-wrap .main-review-list .swiper-slide.swiper-slide-active{opacity: 1;}

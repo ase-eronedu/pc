@@ -92,14 +92,38 @@ function reviewSlide(){
     speed:550,
     loopedSlides: 3,
     centeredSlides: true,
-    spaceBetween: 30,
+    // spaceBetween: 30,
     slidesPerView: 'auto',
     navigation: {
       nextEl: ".main-review-list .swiper-button-next",
       prevEl: ".main-review-list .swiper-button-prev",
     }, 
   });
-}  
+
+  var isHovering = false;
+  $('.main-review-list').on('mousemove', function(e) {
+    var $prev = $(this).find('.swiper-slide-prev');
+    var $next = $(this).find('.swiper-slide-next');
+    if (!$prev.length || !$next.length) return;
+
+    var leftBound = $prev.offset().left;
+    var rightBound = $next.offset().left + $next.outerWidth();
+    var inRange = e.pageX >= leftBound && e.pageX <= rightBound;
+
+    if (inRange && !isHovering) {
+      isHovering = true;
+      reviewSlider.autoplay.stop();
+    } else if (!inRange && isHovering) {
+      isHovering = false;
+      reviewSlider.autoplay.start();
+    }
+  }).on('mouseleave', function() {
+    if (isHovering) {
+      isHovering = false;
+      reviewSlider.autoplay.start();
+    }
+  });
+}
 
 
 function mainVisual(){
