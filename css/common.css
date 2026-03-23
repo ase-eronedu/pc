@@ -442,6 +442,7 @@ input:-webkit-autofill:active { -webkit-box-shadow: 0 0 0px 1000px white inset !
 .layer-popup .popup .pop-footer .btn-wrap{margin-top:0;}
 .layer-popup .popup .pop-footer .btn-wrap [class*=btn-type]{font-size:16px;font-weight:700;}
 .layer-popup .popup .pop-footer .btn-wrap [class*=btn-type] ~ [class*=btn-type]{margin-left:8px;}
+.pop-bottom-graybox{margin-top:20px; display: flex; padding: 20px; gap: 8px; background: #F8F9FA; border-radius: 12px; }
 
 .layer-popup.type2 .popup{border-radius:0;width:540px;}
 .layer-popup.type2 .popup .logo-popup{position:absolute;top:30px;left:30px;}
