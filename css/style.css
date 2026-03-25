@@ -911,6 +911,15 @@
 .my-history-detail-wrap .history-detail-box .total2 .price{margin-left:auto;margin-top:0;}
 .my-history-detail-wrap .history-detail-box .menu{display:flex;align-items:center;justify-content: flex-end; gap:10px;padding-top:14px;margin-top:14px; border-top:1px solid #F0F0F0;}
 .my-history-detail-wrap .history-detail-box.st2 li .tit{ color:#86909C;}
+.my-history-detail-wrap .history-detail-box.st3 .list{display:flex;flex-wrap: wrap;flex-direction: row;gap:16px;}
+.my-history-detail-wrap .history-detail-box.st3 li{flex-direction: column;align-items: flex-start;width:100%;gap:5px;}
+.my-history-detail-wrap .history-detail-box.st3 li.half{width:50%;flex:1;}
+.my-history-detail-wrap .history-detail-box.st3 li .tit{ display:block;color:#86909C;}
+.my-history-detail-wrap .history-detail-box.st3 li .tit{ display:block;color:#86909C;}
+.my-history-detail-wrap .history-detail-box.st3 li .input{width:100%;margin-top:0;height:35px;}
+.my-history-detail-wrap .history-detail-box.st3 li .input-addr{width:160px;}
+.my-history-detail-wrap .history-detail-box.st3 li [class*=btn-type]{height:35px;font-size:13px;padding:0 14px;}
+.my-history-detail-wrap .history-detail-box.st3 li .f-wrap{gap:6px;}
 .my-history-detail-wrap .refund-agree{padding:20px;background:#F8F9FA;border-radius:12px;margin-top:20px;}
 .my-history-detail-wrap .refund-agree .chk-wrap{display:flex;align-items:flex-start;gap:8px;cursor:pointer;}
 .my-history-detail-wrap .refund-agree .chk-wrap span{font-size:14px;color:#4E5968;line-height:1.5;word-break:keep-all;flex:1;}
