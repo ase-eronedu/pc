@@ -136,6 +136,8 @@ input:-webkit-autofill:active { -webkit-box-shadow: 0 0 0px 1000px white inset !
 .textarea .byte em { color:#111518;}
 .textarea.st-pop textarea{height:312px;font-size:14px;}
 .textarea.focus{border-color: var(--c-primary);}
+.textarea.st2{padding:12px;}
+.textarea.st2 .byte{font-size:13px;}
 
 .inp-chk-wrap{line-height:1;}
 .inp-chk{position:relative; display:inline-flex;cursor:pointer;white-space:nowrap;align-items: center;}
