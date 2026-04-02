@@ -674,12 +674,12 @@ function layerMenu(){
 /* popup */
 function popClose(id){
 	$(id).fadeOut(300);
-	$('body').css('overflow','');
+	$('body').removeClass('open-popup');
 } 
 
 function popOpen(id, callback){
 	$(id).fadeIn(300);
-	$('body').css('overflow','hidden');
+	$('body').addClass('open-popup');
   $(id).find('input[type=text]:not([value]), input[type=number]:not([value]), textarea:not([value])').val('');
   $(id).find('.input .btn-del').hide();
 
@@ -700,7 +700,7 @@ function alertClose(id){
   $(id).fadeOut(300, ()=>{
     $(id).remove();
   });
-  $('body').css('overflow','');
+  $('body').removeClass('open-alert');
 }
 
 function alertOpen(text, type, callback){
@@ -719,6 +719,7 @@ function alertOpen(text, type, callback){
   const $alert = $(alertHtml);
 
   $('.wrap').append($alert);
+  $('body').addClass('open-alert');
 
   function btnCheck(item){
     if(item.includes('확인') || item.includes('취소')){
