@@ -576,10 +576,10 @@
 .toggle-list > li ul li.ing .name{ color:#5436EA;}
 
 /* .faq-wrap .tab-type1 ~ .tab-content{margin-top:20px;} */
-.faq-list li ~ li{margin-top:16px;}
+.faq-list li ~ li{margin-top:10px;}
 .faq-box{border: 1px solid #F0F0F0; border-radius: 16px;}
-.faq-box .faq-heading {position:relative; width:100%; display:flex;padding:22px 32px;}
-.faq-box .faq-heading:after{content:'';display:block;width:20px;height:20px;position:absolute;top:24px;right:32px; background:url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10.9498' y='3' width='2' height='18' rx='1' fill='%231F2125'/%3E%3Crect x='3' y='12.9497' width='2' height='18' rx='1' transform='rotate(-90 3 12.9497)' fill='%231F2125'/%3E%3C/svg%3E%0A") no-repeat 0 0;background-size:auto 100%;}
+.faq-box .faq-heading {position:relative; width:100%; display:flex;padding:18px 32px;}
+.faq-box .faq-heading:after{content:'';display:block;width:20px;height:20px;position:absolute;top:20px;right:32px; background:url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='10.9498' y='3' width='2' height='18' rx='1' fill='%231F2125'/%3E%3Crect x='3' y='12.9497' width='2' height='18' rx='1' transform='rotate(-90 3 12.9497)' fill='%231F2125'/%3E%3C/svg%3E%0A") no-repeat 0 0;background-size:auto 100%;}
 .faq-box .faq-heading.on:after{background-image:url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='3' y='12.9497' width='2' height='18' rx='1' transform='rotate(-90 3 12.9497)' fill='%231F2125'/%3E%3C/svg%3E%0A");}
 .faq-box .faq-heading b{flex:1;overflow:hidden;font-weight: 400; font-size: 15px; color: #111518;text-align:left;}
 .faq-box [class*=ico-]{display:block;width:20px;height:20px;margin-right:20px;}
@@ -641,7 +641,7 @@
 .withdrawal-text .txt {font-size: 16px; color:var(--c-primary);margin-top:10px;}
 .withdrawal-text .btn-wrap {margin-top:40px;}
 
-.content > [class*=lecure-][class*=-wrap]{margin-top:-20px;}
+.content > [class*=lecure-][class*=-wrap]{margin-top:-10px;}
 .lecure-dashboard-wrap .title-subject{font-weight:700;}
 .lecure-dashboard-wrap .top-area {display:flex;gap:20px;align-items: stretch;}
 .lecure-dashboard-wrap .top-area .left-area,
@@ -1027,6 +1027,11 @@
 .urgent-notice p{ font-weight:600;font-size:17px; color:#F05050;display:flex;align-items:center;gap:6px;}
 .urgent-notice p span{flex:1;}
 .urgent-notice p:before{content:'';display:block;width: 16px;height:15px;background: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.81187 1.29195C6.78425 -0.430666 9.21544 -0.430634 10.1878 1.29195L15.6576 10.9814C16.6299 12.704 15.4147 14.8572 13.4701 14.8574H2.53062C0.585849 14.8574 -0.630242 12.704 0.342144 10.9814L5.81187 1.29195ZM7.82652 11.164C7.59491 11.164 7.39636 11.2465 7.23179 11.4111C7.07332 11.5696 6.99449 11.7654 6.99449 11.997C6.9946 12.2284 7.07343 12.4236 7.23179 12.582C7.39636 12.7466 7.59491 12.8291 7.82652 12.8291C8.05798 12.829 8.25308 12.7464 8.41148 12.582C8.57593 12.4236 8.65843 12.2284 8.65855 11.997C8.65855 11.7654 8.57605 11.5696 8.41148 11.4111C8.25308 11.2466 8.05798 11.1641 7.82652 11.164ZM7.12242 5.7148C6.94574 5.7148 6.85687 5.80651 6.85679 5.98922L7.14976 10.332C7.14976 10.5149 7.24132 10.6064 7.42418 10.6064H8.31968C8.50253 10.6064 8.5941 10.5149 8.5941 10.332L8.86851 5.98922C8.87452 5.80665 8.78635 5.71494 8.60386 5.7148H7.12242Z' fill='%23F05050'/%3E%3C/svg%3E") no-repeat 50% 50%;background-size:auto 100%;}
+
+.player-menu-wrap .urgent-notice{margin: 0 20px 20px;border-radius: 6px;height: 44px;padding: 0px 14px;}
+.player-menu-wrap .urgent-notice p{font-size:14px;font-weight:500;}
+.player-menu-wrap .urgent-notice p span{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.3em;height:1.3em;}
+.player-menu-wrap .curriculum-desc + .urgent-notice{margin-top:-5px;}
 
 .form-noti-box{display: flex; align-items: center; padding: 16px 20px; gap: 10px; height: 54px; background: #F8F9FA; border-radius: 8px;}
 .form-noti-box .box-txt-noti{font-size:14px; color:#F05050;display:flex;align-items:flex-start;gap:4px;}
