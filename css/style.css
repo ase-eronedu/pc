@@ -62,6 +62,7 @@
 .main-lecture-wrap .main-lecture-list .swiper-slide .desc .sale-price .price{display:flex;align-items:center;gap:10px;font-weight:600;}
 .main-lecture-wrap .main-lecture-list .swiper-slide .desc .sale-price .price b{font-weight:600;}
 .main-lecture-wrap .main-lecture-list .swiper-slide .desc .sale-price .sale{color: #5436EA;}
+.main-lecture-wrap .main-lecture-list.youtube-list .swiper-slide .img img{height:160px;}
 
 .main-lecture-wrap .lecture-tab{margin-top:30px;display:flex;align-items:center;flex-wrap:wrap;gap:10px;}
 .main-lecture-wrap .lecture-tab button {display:flex;justify-content:center;align-items:center;padding: 0px 20px; height: 50px; background: #F5F5F6; border-radius: 10px;font-size:15px;font-weight:600; color:#747678;transition: background-color 0.3s ease, color 0.3s ease;}
