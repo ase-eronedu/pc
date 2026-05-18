@@ -400,6 +400,7 @@
 .product-list.st3 > li .item{align-items: center;}
 .product-list.st3 > li .item .img{width:218px;height:140px;}
 .product-list.st3 > li .item .desc dt .tit{font-size:16px;font-weight:600;}
+.product-list.st3 > li .item .desc dt [class*=tag-st] + .tit{margin-top:10px;}
 .product-list.st3 > li .item .desc dd{margin-top:10px;}
 .product-list.st3 > li .item .desc dd ul li{font-size:14px;}
 .product-list.st3 > li .item .desc dd .txt{font-weight: 400;font-size: 14px;color: #86909C;}
@@ -648,7 +649,7 @@
 .history-list dd .list{margin-top:10px;}
 .history-list dd .list li{display:flex;align-items:center;gap:10px;padding:14px 20px;background:#F8F9FA;border-radius:8px;font-size:14px;color:#1F2125;line-height:1.5;}
 .history-list dd .list li ~ li{margin-top:6px;}
-.history-list dd .list li [class*=tag-st]{flex-shrink:0;width:70px;min-width:70px;height:auto;line-height:20px;padding:3px 11px;font-size:13px;letter-spacing:-0.5px;border-radius:30px;}
+.history-list dd .list li [class*=tag-st]{flex-shrink:0;width:94px;min-width:94px;height:auto;line-height:20px;padding:3px 11px;font-size:13px;letter-spacing:-0.5px;border-radius:30px;}
 .history-list dd .list li .tit{flex:1;min-width:0;}
 .history-list dd .list li .price{flex-shrink:0;white-space:nowrap;}
 .history-list dd .list li .link-detail{flex-shrink:0;white-space:nowrap;color:#1F2125;text-decoration:none;}
