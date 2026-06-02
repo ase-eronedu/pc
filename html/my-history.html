@@ -45,10 +45,11 @@
             <i class="ico-cal"></i><span><span class="set-date-txt">날짜선택</span> <em class="set-date"></em></span>
           </div>
           <div class="date-select">
+            <button type="button" id="total">전체</button>
             <button type="button" id="month3">최근 3개월</button>
             <button type="button" id="month6">최근 6개월</button>
             <button type="button" id="month12">최근 1년</button>
-            <button type="button" id="direct">날자선택</button>
+            <!-- <button type="button" id="direct">날자선택</button> -->
             <div class="input-calendar" id="range-calener" style="display: none;">
               <div class="inp"><input type="text" class="datepicker" id="startDate"></div>
               <span class="dash">~</span>
@@ -260,9 +261,16 @@ $(".datepicker").datepicker({
   }
 });
 
-//최근 3개월 처음셋팅
-setDateRange(3, '최근 3개월');
-$('#month3').addClass('on');
+//전체 처음셋팅
+$('.set-date-txt').text('전체');
+$('.set-date').text('(2025.02.28~2025.05.28)');
+$('#total').addClass('on');
+
+$('#total').on('click', function () {
+  $('.set-date-txt').text('전체');
+  $('.set-date').text('(2025.02.28~2025.05.28)');
+  $(this).addClass('on').siblings('button').removeClass('on');
+});
 
 $('#month3').on('click', function () {
   setDateRange(3, '최근 3개월');

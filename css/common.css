@@ -494,6 +494,7 @@ body{min-width: 1440px;}
 .header .top-area .right {margin-left:auto;}
 .header .top-area .right .login-menu {display:flex;align-items:center; color:#666666;}
 .header .top-area .right .login-menu li {position:relative;font-size:13px;}
+.header .top-area .right .login-menu li *{vertical-align:baseline;}
 .header .top-area .right .login-menu li ~ li{padding-left:10px;margin-left:10px;}
 .header .top-area .right .login-menu li ~ li:after{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:10px;background:#DDDDDD;transform:translateY(-50%);}
 .header .top-area .right .login-menu li a {display:block;}
