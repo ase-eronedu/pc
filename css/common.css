@@ -304,7 +304,9 @@ input:-webkit-autofill:active { -webkit-box-shadow: 0 0 0px 1000px white inset !
 
 .editor-wrap{margin-top:20px;}
 
-.gage-wrap .txt{display:block; margin-bottom:10px;font-size: 14px;color: #86909C;}
+.gage-wrap .txt{display:block;font-size: 14px;color: #86909C;font-weight:300;}
+.gage-wrap .txt + *{margin-top:10px;}
+.gage-wrap .txt + .txt{margin-top:1px;}
 .gage-bar{position:relative;height: 6px;background: #EDEEF0; border-radius: 6px;width:300px;}
 .gage-bar .bar{position:absolute;top:0;left:0;height:100%;background:var(--c-primary);border-radius:6px;}
 
