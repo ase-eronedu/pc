@@ -204,18 +204,18 @@
 .login-form .btn-wrap .btn-login,
 .login-form .btn-wrap .btn-kakao,
 .login-form .btn-wrap .btn-naver{height:55px;}
-.login-form .btn-wrap .btn-kakao{ background: #FEE500; border-radius: 12px;padding:0 20px 0 17px;font-weight: 500; font-size: 16px;}
+.login-form .btn-wrap .btn-kakao{ background: #FEE500; border-radius: 8px;padding:0 20px 0 17px;font-weight: 500; font-size: 16px;}
 .login-form .btn-wrap .btn-kakao:before{content:'';display:block;margin-right:22px;width: 25px;height:21px;background: url("data:image/svg+xml,%3Csvg width='25' height='21' viewBox='0 0 25 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_2062_38293)'%3E%3Cpath d='M13.4118 1C7.2408 1 2.23529 4.56559 2.23529 8.96252C2.23529 11.7592 4.26005 14.2148 7.31599 15.6372L6.26333 19.5536L11.3064 16.7857C11.9885 16.877 12.6921 16.9298 13.4118 16.9298C19.5827 16.9298 24.5882 13.3642 24.5882 8.96732C24.5882 4.5704 19.5827 1 13.4118 1Z' fill='%233E1918'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2062_38293'%3E%3Crect width='24.5882' height='20.4142' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") no-repeat 50% 50%;background-size:auto 100%;}
-.login-form .btn-wrap .btn-naver{background: #03C75A; border-radius: 12px;padding:0 20px;color:#fff;font-weight: 500; font-size: 16px;}
+.login-form .btn-wrap .btn-naver{background: #03C75A; border-radius: 8px;padding:0 20px;color:#fff;font-weight: 500; font-size: 16px;}
 .login-form .btn-wrap .btn-naver:before{content:'';display:block;width:16px;height:16px;margin-right:26px; background:url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.8562 8.48926L4.91901 0H0V15.8678H5.15703V7.37851L11.081 15.8678H16V0H10.8562V8.48926Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat 0 0;background-size:auto 100%;}
 .login-form .btn-wrap .login-menu{margin-top:20px;}
 .login-form .btn-wrap .or{position:relative;display:flex;justify-content:center;align-items:center;width:100%;margin-top:14px;}
 .login-form .btn-wrap .or:before{content:'';display:block;position:absolute;top:50%;left:0;width:100%; height: 1px;background:#F0F0F0;}
 .login-form .btn-wrap .or span{display:inline-flex;justify-content:center;align-items:center;width:100px;font-size:12px; color:#86909C;height:18px;background:#fff;position:relative;}
 .login-form .login-menu {margin-top:10px;width:100%;}
-.login-form .login-menu ul {display:flex;align-items:center;justify-content: space-between;}
+.login-form .login-menu ul {display:flex;align-items:center;gap:26px;justify-content: center;}
 .login-form .login-menu ul li{position:relative;}
-.login-form .login-menu ul li ~ li{margin-left:12px;padding-left:13px;}
+/* .login-form .login-menu ul li ~ li{margin-left:12px;padding-left:13px;} */
 .login-form .login-menu ul li button span {color: #86909C;font-size: 14px;border-bottom:1px solid #86909C;line-height:0.8;}
 .login-form .login-menu .inp-chk .t{ color:#86909C;}
 .login-form select,
