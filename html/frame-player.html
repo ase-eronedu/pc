@@ -510,6 +510,129 @@
           </div>
         </section>
         <!-- // 강의 목차 -->
+         <!-- 영상 받기 -->
+        <section class="menu-detail" id="lecture-movie" style="display:none">
+          <header class="menu-header">
+            <h1 class="title-subject"><i class="ico-lecture-movie"></i><span>영상 받기</span></h1>
+            <button type="button" class="btn-close" onclick="menuClose();"></button>
+          </header>
+          <div class="menu-body pad">
+            <div class="auto">
+              <section class="lecture-movie-wrap">
+                <div class="toggle-menu-wrap" data-evt="toggle-list">
+                  <div class="wrap-header">
+                      <div class="toggle-menu">
+                        <button class="btn-tog"><span>모두 열기</span></button>
+                    </div>
+                    <div class="right">
+                      <p class="txt-hint" role="note">
+                        <span class="ico-play-hint" aria-hidden="true"></span><span >다운로드할 영상을 선택해 주세요.</span>
+                      </p>
+                    </div>
+                  </div>
+              
+                  <ul class="toggle-list movie-download-groups" id="movie-download-groups">
+                    <!-- 그룹 1 -->
+                    <li class="on">
+                      <button type="button" class="btn"><b class="tit">문제(소스) 파일 및 자동채점폴더</b></button>
+                      <ul>
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- 그룹 2 -->
+                    <li>
+                      <button type="button" class="btn"><b class="tit">문제(소스) 파일 및 자동채점폴더</b></button>
+                      <ul style="display: none;">
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- 그룹 3 -->
+                    <li>
+                      <button type="button" class="btn"><b class="tit">문제(소스) 파일 및 자동채점폴더</b></button>
+                      <ul style="display: none;">
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                    <!-- 그룹 4 -->
+                    <li>
+                      <button type="button" class="btn"><b class="tit">문제(소스) 파일 및 자동채점폴더</b></button>
+                      <ul style="display: none;">
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="inp-chk">
+                            <input type="radio" name="movie-dl"><span class="ic"></span>
+                            <span class="t">IT 프로젝트 정보시스템 구축 관리(1) - 문제</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+            <div class="btn-wrap btm-fixed st2">
+              <button type="button" class="btn-type4 st2 w-size1">취소</button>
+              <button type="button" class="btn-type4 st1 w-auto">영상 저장하기</button>
+            </div>
+          </div>
+        </section>
+        <!-- // 영상 받기 -->
       </div>
       <div class="player-menu">
         <ul>
@@ -517,6 +640,7 @@
           <li><button type="button" onclick="menuOpen('#curriculum');"><i class="ico-curriculum"></i><span>커리큘럼</span></button></li>
           <li><button type="button" onclick="menuOpen('#qna');"><i class="ico-question"></i><span>질문하기</span></button></li>
           <li><button type="button" onclick="menuOpen('#lecture-list');"><i class="ico-lecture-list"></i><span>강의 목차</span></button></li>
+          <li><button type="button" onclick="menuOpen('#lecture-movie');"><i class="ico-lecture-movie"></i><span>영상받기</span></button></li>
         </ul>
       </div>
     </div>
