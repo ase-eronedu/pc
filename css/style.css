@@ -520,6 +520,8 @@
 .data-list li a {display:block;padding:14px;}
 .data-list li a:hover{background: rgba(84, 54, 234, 0.02);}
 .data-list li a .tags{margin-bottom:15px;gap:6px;display:flex;align-items:center;}
+.data-list li a .title {display:flex;align-items: center; gap:10px;}
+.data-list li a .title .tit{flex:1;}
 .data-list li a .tit {display:flex;align-items: center;   color: #373F57; font-weight: 600; font-size: 15px; overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.2em;height:1.2em;}
 .data-list li a .tit .ico-lock{vertical-align: middle;position:relative;top:-2px;margin-right:4px;}
 .data-list li a .tit span:not(.highlight){overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.2em;height:1.2em;}

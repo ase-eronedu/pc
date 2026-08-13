@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="format-detection" content="telephone=no"/>
+<title></title>
+
+<!-- 기본 파비콘 (필수) -->
+<link rel="icon" href="../favicon.ico" sizes="any">
+
+<!-- 모던 브라우저용 SVG (선택, 우선순위 높음) -->
+<link rel="icon" type="image/svg+xml" href="../images/icons/favicon.svg">
+
+<!-- PNG fallback -->
+<link rel="icon" type="image/png" sizes="32x32" href="../images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/icons/favicon-16x16.png">
+
+<!-- PNG fallback -->
+<link rel="apple-touch-icon" href="../images/icons/icon-192x192.png">
+
+<link type="text/css" rel="stylesheet" href="../js/jquery-ui/jquery-ui.min.css">
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<script src="../js/jquery-3.7.1.min.js"></script>
+<script src="../js/jquery-ui/jquery-ui.min.js"></script>
+<script src="../js/ui.js"></script>
+
+
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+
+</div>
+<!-- // wrap -->
+
+
+<!-- layer-popup -->
+<section class="layer-popup st-notice" id="pop-notice">
+  <div class="dim"></div>
+  <div class="pop-wrap">
+    <div class="popup">
+      <div class="pop-notice-banner">
+        <img src="../images/temp/temp-notice.jpg" alt="공지 이미지">
+      </div>
+      <div class="pop-notice-footer">
+        <label class="inp-chk">
+          <input type="checkbox">
+          <i class="ic"></i>
+          <span class="t">오늘 하루 그만보기</span>
+        </label>
+        <button type="button" class="btn-close-txt" onclick="popClose('#pop-notice');">닫기</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- // layer-popup -->  
+
+
+  <script>
+    popOpen('#pop-notice');
+ </script>
+</body>
+</html>
