@@ -472,6 +472,14 @@
 .payment-wrap .detail-box .label{font-size:14px;}
 .payment-wrap .detail-box .label + *:not(.input-calendar){margin-top:5px;}
 .payment-wrap .detail-box .col .full {width:100%;}
+.payment-wrap .detail-box .product-info{margin-top:20px;margin-bottom:-20px;}
+.payment-wrap .detail-box .product-info table{width:100%;color:#373F57;font-size:14px;letter-spacing:-0.5px;}
+.payment-wrap .detail-box .product-info table th,
+.payment-wrap .detail-box .product-info table td{height:44px;padding:5px 10px;border-top:1px solid #EAEAEA;background:#fff;text-align:center;vertical-align:middle;}
+.payment-wrap .detail-box .product-info table th{width:120px;font-weight:600;text-align:left;}
+.payment-wrap .detail-box .product-info table td{font-weight:400;text-align:left;}
+.payment-wrap .detail-box .product-info table tr:last-child th,
+.payment-wrap .detail-box .product-info table tr:last-child td{border-bottom-color:#000;}
 
 .line-plus{position:relative;margin:22px 0; }
 .line-plus:before{content:'';display:block;width:100%;height:1px;border-top: 1px solid rgba(134, 144, 156, 0.3);}
@@ -568,15 +576,18 @@
 .player-menu-wrap .detail-view .view-menu{padding-top:20px;padding-bottom:20px;}
 
 .product-apply-wrap{display:flex;align-items: flex-start;}
-.product-apply-wrap .product-detail-wrap{flex:1;}
+
+.product-detail-wrap{flex:1;}
 .product-detail-wrap .visual img {width: 100%;border-radius:12px;}
 .product-detail-wrap .title-product {margin-top:30px;font-weight: 600; font-size: 20px;}
 .product-detail-wrap .tag-wrap {margin-top:15px;}
-.product-detail-wrap .tab-type1{margin:30px 0;}
+.product-detail-wrap .tab-type1{margin:20px 0 30px; padding-bottom:0;}
 .product-detail-wrap .product-detail .title-major + *{margin-top:20px;}
 .product-detail-wrap .product-detail .img img {max-width: 100%;}
 .product-detail-wrap .line-bar {background: #F8F8F8; border-top: 1px solid #E0E0E0;margin:60px auto;height:12px;}
 .product-detail-wrap .product-detail .text-policy.pre-line {font-size:14px;}
+.product-detail-wrap .text-book-detail{color:#373F57;font-size:14px;line-height:1.4;word-break:break-word;}
+.product-detail-wrap .text-book-detail p{margin:0;}
 
 .toggle-menu-wrap .wrap-header{display:flex;align-items:center;justify-content: space-between;margin-bottom:14px;}
 .toggle-menu-wrap .toggle-menu:first-child .btn-tog{margin-left:15px;}
