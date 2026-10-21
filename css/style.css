@@ -46,7 +46,6 @@
 .main-lecture-wrap .main-lecture-list{margin-top:30px;overflow:hidden;}
 .main-lecture-wrap .main-lecture-list .swiper-slide .img{position:relative;overflow:hidden; display:flex;justify-content:center;align-items:center;border-radius:10px;}
 .main-lecture-wrap .main-lecture-list .swiper-slide .img img{object-fit: cover;width:100%;height:180px;transition: all 0.5s ease;}
-.main-lecture-wrap .main-lecture-list .swiper-slide a:hover .img img{transform: scale(1.1);}
 .main-lecture-wrap .main-lecture-list .swiper-slide .desc{margin-top:16px;color: #1F2125;}
 .main-lecture-wrap .main-lecture-list .swiper-slide .desc .info{font-size:13px;display:flex;align-items:center;justify-content: space-between;}
 .main-lecture-wrap .main-lecture-list .swiper-slide .desc .info .left{font-weight:400; color:#86909C;}
@@ -300,7 +299,6 @@
 .movie-list li a {display:flex;gap:10px;flex-direction: column;}
 .movie-list li a .img {height:132px;width:100%; border-radius:12px;overflow:hidden;position:relative;display:flex;justify-content:center;align-items:center;}
 .movie-list li a .img img{position: absolute; object-fit: cover;transition: all 0.5s ease;width:100%;height:100%;}
-.movie-list li a:hover .img img{transform: scale(1.1);}
 .movie-list li a .desc{flex:1;padding-top:2px;}
 .movie-list li a .txt {font-size:14px; font-weight:400; color:#1F2125;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.3em;height:2.6em;}
 
@@ -370,7 +368,6 @@
 .product-list > li .item {display:flex;}
 .product-list > li .item .img {position:relative; width:340px;height:219px;overflow:hidden;margin-right:20px;border-radius:12px; position:relative;display:flex;justify-content:center;align-items:center;}
 .product-list > li .item .img img {position: absolute; object-fit: cover;transition: all 0.5s ease;min-width:100%;min-height: 100%;width:100%;}
-.product-list > li .item:hover .img img{transform: scale(1.1);}
 .product-list > li .item .desc{flex:1;overflow:hidden;}
 .product-list > li .item .desc dt .tit{font-weight: 700; font-size: 18px;display:block; margin-top: 5px;}
 .product-list > li .item .desc dt .tit *{vertical-align:baseline;}
