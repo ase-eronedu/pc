@@ -604,7 +604,7 @@ function toggleList(){
       $tog.removeClass('on');
       $tog.find('span').text('모두 열기');
       $pannels.slideUp();
-      $lists.removeClass('on');      
+      $lists.removeClass('on');
     }else{
       $tog.addClass('on');
       $tog.find('span').text('모두 접기');
@@ -625,7 +625,7 @@ function toggleList(){
     let $listsOn = $('[data-evt="toggle-list"] .toggle-list > li.on');
     if($listsOn.length == $lists.length){
       $tog.addClass('on');
-      $tog.find('span').text('모두 접기');      
+      $tog.find('span').text('모두 접기');
     }else if(0 == $listsOn.length){
       $tog.removeClass('on');
       $tog.find('span').text('모두 열기');
