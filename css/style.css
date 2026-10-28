@@ -995,6 +995,21 @@
 .coupon-set + *{margin-top:20px;}
 .pop-body .dot-list-pop-bottom{background:#F8F9FA;padding:20px 32px;width:calc(100% + 64px);margin-bottom:-24px;margin-left:-32px;border-radius:0 0 16px 16px;}
 
+/* 얼리버드 할인 쿠폰 발급 팝업 */
+.layer-popup.pop-early-coupon .popup .pop-header .pop-tit{font-size:18px;font-weight:700;line-height:1.5;}
+.layer-popup.pop-early-coupon .popup .pop-body{padding:0;}
+.pop-early-coupon .coupon-issued{display:flex;flex-direction:column;align-items:center;gap:10px;padding:10px 32px 20px;}
+.pop-early-coupon .coupon-img{position:relative;width:100px;height:60px;}
+.pop-early-coupon .coupon-img img{display:block;}
+.pop-early-coupon .coupon-txt{position:absolute;top:11px;left:12px;display:flex;flex-direction:column;gap:2px;line-height:1.3;}
+.pop-early-coupon .coupon-txt b{font-size:18px;font-weight:900;color:#fff;}
+.pop-early-coupon .coupon-txt span{font-size:10px;font-weight:500;color:#F6F5FE;}
+.pop-early-coupon .coupon-name{font-size:18px;font-weight:600;color:#000;line-height:1.5;}
+.pop-early-coupon .coupon-name em{color:#5436EA;}
+.pop-early-coupon .coupon-guide{display:flex;flex-direction:column;gap:4px;padding:20px 32px;background:#F8F9FA;color:#1F2125;letter-spacing:-0.5px;line-height:1.5;}
+.pop-early-coupon .coupon-guide .tit{font-size:15px;font-weight:600;}
+.pop-early-coupon .coupon-guide .txt{font-size:13px;font-weight:400;}
+
 .coupon-wrap .title-wrap {display:flex;align-items:center;}
 .coupon-wrap .title-wrap + *{margin-top:6px;}
 .coupon-wrap .title-wrap .tit {font-size:14px;}
